@@ -1,0 +1,27 @@
+# Composer dependencies
+/vendor/
+
+# Environment and local configuration
+.env
+.env.*
+!.env.example
+
+# AWS and SSH credentials
+*.pem
+*.ppk
+.aws/
+credentials
+
+# Local XAMPP and database files
+xampp/
+mysql/
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor settings
+.vscode/
+.idea/
