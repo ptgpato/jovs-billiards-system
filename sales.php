@@ -88,11 +88,15 @@ $transactions = $conn->query(
     <title>Sales Data</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sales.css">
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
     <div class="sales-container">
         <div class="header">
-            <div class="welcome">Sales Data</div>
+            <div>
+                <div class="welcome">Sales desk</div>
+                <p class="header-subtitle">Record a sale and keep stock accurate</p>
+            </div>
             <div class="action-buttons">
                 <form method="post" action="owner_dashboard.php">
                     <button type="submit" class="action-button">Back</button>

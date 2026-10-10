@@ -121,6 +121,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['update_price'])) {
     <title>Inventory Management</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="inventory1.css">
+    <link rel="stylesheet" href="app.css">
     <style>
         /* Toast Notification */
         #toast {
@@ -171,7 +172,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['update_price'])) {
 <body>
     <div class="inventory-container">
         <div class="header">
-            <div class="welcome">Inventory Management</div>
+            <div>
+                <div class="welcome">Inventory</div>
+                <p class="header-subtitle">Manage products, pricing, and stock movement</p>
+            </div>
             <div class="action-buttons">
                 <form method="post" action="owner_dashboard.php">
                     <button type="submit" class="action-button">Back</button>
@@ -184,7 +188,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['update_price'])) {
 
         <div class="section">
             <h2>Add New Item</h2>
-            <form method="POST" action="inventory.php" enctype="multipart/form-data">
+            <form method="POST" action="inventory.php" enctype="multipart/form-data" class="product-form">
                 <input type="text" name="item_name" placeholder="Item Name" required><br>
                 <input type="number" name="quantity" placeholder="Quantity" required><br>
                 <input type="number" step="0.01" name="price" placeholder="Price" required><br>

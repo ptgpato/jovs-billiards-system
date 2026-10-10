@@ -58,6 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['add_cashier'])) {
     <title>User Management</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="inventory1.css">
+    <link rel="stylesheet" href="app.css">
     <style>
         #toast {
             visibility: hidden;
@@ -105,7 +106,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['add_cashier'])) {
 <body>
     <div class="inventory-container">
         <div class="header">
-            <div class="welcome">User Management</div>
+            <div>
+                <div class="welcome">Team access</div>
+                <p class="header-subtitle">Create and review cashier accounts</p>
+            </div>
             <div class="action-buttons">
                 <form method="post" action="owner_dashboard.php">
                     <button type="submit" class="action-button">Back</button>
