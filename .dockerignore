@@ -1,0 +1,12 @@
+.git
+.github
+.venv
+vendor
+.env
+*.pem
+*.ppk
+*.log
+Dockerfile
+docker-compose*.yml
+README.md
+DEPLOYMENT.md

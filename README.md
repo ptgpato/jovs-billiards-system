@@ -35,6 +35,17 @@ Amazon EC2: Apache + PHP
 - Amazon RDS for MySQL
 - Amazon S3
 
+## Docker
+
+Docker support is provided through a PHP 8.2/Apache image:
+
+```powershell
+docker compose up --build
+```
+
+This starts the application and a local MySQL 8.4 database at `http://localhost:8080/login.php`.
+For AWS, use `docker-compose.aws.yml`; it starts only the application container and uses the existing RDS database and EC2 IAM role for S3 access. See [DEPLOYMENT.md](./DEPLOYMENT.md) for the required `.env` values and commands.
+
 ## Project structure
 
 ```text
